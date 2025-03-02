@@ -6,8 +6,10 @@
     <meta name="description" content="Cultiv8 Wellness - Transform your relationship with our professional tantra massage course for couples. Learn techniques to deepen intimacy through mind, body, and spirit alignment.">
     <meta name="keywords" content="tantra massage, couples massage, intimacy, wellness, relationship, spiritual connection">
     <title>Cultiv8 Wellness | Couples Tantra Massage Course</title>
+    
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://via.placeholder.com/32x32" />
+    
     <!-- TailwindCSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -25,24 +27,30 @@
             }
         }
     </script>
-    <!-- Custom Styles -->
-    <style type="text/tailwindcss">
-        @layer utilities {
-            .text-shadow {
-                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-            }
-        }
-    </style>
 </head>
 <body class="bg-lotus font-sans">
     <div id="root"></div>
-    
+
     <!-- React and ReactDOM -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    
-    <!-- Main App -->
-    <script type="text/babel" src="app.js"></script>
+
+    <!-- Main React App (Inline for GitHub Pages & Vercel Compatibility) -->
+    <script type="text/babel">
+        const App = () => {
+            return (
+                <div className="flex flex-col items-center justify-center min-h-screen text-center">
+                    <h1 className="text-4xl font-bold text-amethyst">Welcome to Cultiv8 Tantra Massage</h1>
+                    <p className="text-sand mt-4 max-w-xl">Deepen your intimacy through sacred connection and transformative massage techniques.</p>
+                    <a href="#" className="mt-6 px-6 py-3 bg-golden text-white rounded-full text-lg shadow-md hover:bg-yellow-600">
+                        Begin Your Sacred Journey
+                    </a>
+                </div>
+            );
+        };
+
+        ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+    </script>
 </body>
 </html>
