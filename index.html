@@ -36,16 +36,67 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <!-- Main React App (Inline for GitHub Pages & Vercel Compatibility) -->
+    <!-- Main React App -->
     <script type="text/babel">
         const App = () => {
             return (
-                <div className="flex flex-col items-center justify-center min-h-screen text-center">
-                    <h1 className="text-4xl font-bold text-amethyst">Welcome to Cultiv8 Tantra Massage</h1>
-                    <p className="text-sand mt-4 max-w-xl">Deepen your intimacy through sacred connection and transformative massage techniques.</p>
-                    <a href="#" className="mt-6 px-6 py-3 bg-golden text-white rounded-full text-lg shadow-md hover:bg-yellow-600">
-                        Begin Your Sacred Journey
-                    </a>
+                <div className="flex flex-col items-center justify-center min-h-screen bg-lotus text-center px-6">
+                    <header className="w-full py-6 text-center">
+                        <h1 className="text-5xl font-bold text-amethyst">Your Path to Sacred Connection</h1>
+                        <p className="text-lg text-sand mt-3">
+                            Choose your journey through our carefully crafted course offerings.
+                        </p>
+                    </header>
+
+                    <section className="grid md:grid-cols-3 gap-6 mt-8 max-w-5xl">
+                        <div className="p-6 border rounded-lg shadow-md bg-white">
+                            <h2 className="text-xl font-semibold text-amethyst flex items-center gap-2">
+                                💜 Sacred Foundations
+                            </h2>
+                            <p className="text-sand text-sm mt-2">
+                                Master the essential principles of tantra massage and energy flow.
+                            </p>
+                            <ul className="text-sm text-gray-600 mt-2 space-y-1">
+                                <li>✅ Basic energy principles</li>
+                                <li>✅ Partner communication</li>
+                                <li>✅ Sacred space creation</li>
+                            </ul>
+                        </div>
+
+                        <div className="p-6 border rounded-lg shadow-md bg-white">
+                            <h2 className="text-xl font-semibold text-amethyst flex items-center gap-2">
+                                🔥 Divine Flow
+                            </h2>
+                            <p className="text-sand text-sm mt-2">
+                                Advanced techniques for deeper connection and spiritual intimacy.
+                            </p>
+                            <ul className="text-sm text-gray-600 mt-2 space-y-1">
+                                <li>✅ Advanced energy work</li>
+                                <li>✅ Chakra alignment</li>
+                                <li>✅ Tantric breathwork</li>
+                            </ul>
+                        </div>
+
+                        <div className="p-6 border rounded-lg shadow-md bg-white">
+                            <h2 className="text-xl font-semibold text-amethyst flex items-center gap-2">
+                                📖 Soul Guides
+                            </h2>
+                            <p className="text-sand text-sm mt-2">
+                                Comprehensive eBooks and guided meditation resources.
+                            </p>
+                            <ul className="text-sm text-gray-600 mt-2 space-y-1">
+                                <li>✅ Digital workbooks</li>
+                                <li>✅ Meditation tracks</li>
+                                <li>✅ Practice guides</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section className="mt-12 text-center">
+                        <a href="#" className="px-6 py-3 bg-golden text-white rounded-full text-lg shadow-md hover:bg-yellow-600">
+                            Begin Your Sacred Journey
+                        </a>
+                    </section>
                 </div>
             );
         };
